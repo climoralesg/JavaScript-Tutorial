@@ -24,3 +24,6 @@ condicion ? (
 
 var esMiembro = true;
 console.log("El pago son " + (esMiembro ? "20.00€" : "50.00€"));
+
+let numero = 10;
+console.log("El pago son " + (numero >= 11  ? "20.00€" : "50.00€"));
