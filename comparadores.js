@@ -1,9 +1,9 @@
 //nos saltaremos lo de siempre y solamente nos centraremos en los nuevos 
 //operadores de comparacion 
 
-var igual = 10==10; //true
-var igualTotalmente=10 === 10; // true
-var igualTotalmenteEnTodo= 10==='10'; //false
+var igual = 10 == 10; //true
+var igualTotalmente = 10 === 10; // true
+var igualTotalmenteEnTodo = 10 === '10'; //false
 
 // lo mismo ocurre si deseamos negacion
 
