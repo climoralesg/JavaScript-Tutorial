@@ -12,9 +12,9 @@ const multiplicados=numeros.map(x => x * 2);
 
 const parejas=numeros.map(x=>[x,x]);
 
+
 console.log(parejas)
 console.log(multiplicados);
-
 
 
 const mascotas=[

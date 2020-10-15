@@ -7,6 +7,7 @@
 //const reducer=(acumulador, valorActual)=>nuevoAcumulador
 
 const reducido=[1,2].reduce((acc,el)=> acc + el ,0)
+//reduce((acumulador,valor actual)=>acumulador+ valor actual, donde comienza)
 console.log(reducido);
 const numeros=[1,2,3,4,5,6,7,8,9]
 
@@ -28,7 +29,7 @@ const indexed=mascotas.reduce((acc,el)=>({
 
 //console.log(indexed)
 
-console.log(indexed['pulga'])
+console.log("indexes", indexed['pulga'])
 const anidado=[1,[2,3],4,[5]];
 
 //1 2 3 4 5 
