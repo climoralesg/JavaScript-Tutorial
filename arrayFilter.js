@@ -1,5 +1,6 @@
-//filter sirve para tener un arreglo filtrado
+//Array Filter sirve filtrar los elementos del Array
  
+//Declaramos variables
 const numeros=[1,2,3,4,5,6,7,8,9]
 
 const mascotas=[
@@ -9,11 +10,13 @@ const mascotas=[
     {nombre:'totti',edad:2, raza:'perro'}
 ];
 
-//genera un arreglo con valores filtrados
+//Genera un arreglo con valores filtrados
+//Filtrar los numeros menores a 5
 const numerosFiltrados=numeros.filter(x => x < 5 );
 console.log(numerosFiltrados);
 console.log(numerosFiltrados,numeros);
 
+//Filtra los objetos por raza
 const perros=mascotas.filter(x=>x.raza=='perro');
 const gatos=mascotas.filter(x=>x.raza=='gato');
 console.log(gatos);

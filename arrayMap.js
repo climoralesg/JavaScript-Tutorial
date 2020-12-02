@@ -1,3 +1,5 @@
+
+
 const suma=(ns)=>{
     let acumulado=0;
     for(i=0;i<ns.length;i++){
@@ -7,9 +9,9 @@ const suma=(ns)=>{
 }
 
 const numeros=[1,2,3,4,5,6,7,8,9]
-//map recorre todos los valores 1 por 1 y crea un nuevo arreglo
-const multiplicados=numeros.map(x => x * 2);
 
+//Array Map recorre todos los valores 1 por 1 y crea un nuevo arreglo
+const multiplicados=numeros.map(x => x * 2);
 const parejas=numeros.map(x=>[x,x]);
 
 
@@ -25,8 +27,9 @@ const mascotas=[
 ];
 
 const resultadoSumaFuncion = suma(numeros);
-//map aplica una funcion a los elementos
-const edades=mascotas.map(x=>x.edad); // si queremos copiar solamente
+//Map aplica una funcion a los elementos
+//Tambien sirve para copiar un array a otro
+const edades=mascotas.map(x=>x.edad);
 console.log(edades);
 const resultado=suma(edades);
 console.log(resultado);

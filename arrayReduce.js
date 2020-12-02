@@ -1,9 +1,10 @@
-// reduce es un metodo que nos permiten ejecutar funciones reduce
-// recibe 2 argumentos
-// el primero es un valor que se esta acumulando
-// el segundo es el elemento que se esta iterando del arreglo
-//esta funcion devuelve un elemento que se esta acumulando
-
+/*
+Reduce es un metodo que nos permite ejecutar funciones reduce sobre una funcion
+ recibe 2 argumentos
+ el primero es un valor que se esta acumulando el segundo es el elemento que
+ se esta iterando del arreglo esta funcion devuelve
+ un elemento que se esta acumulando
+*/
 //const reducer=(acumulador, valorActual)=>nuevoAcumulador
 
 const reducido=[1,2].reduce((acc,el)=> acc + el ,0)
@@ -22,10 +23,7 @@ const mascotas=[
     {nombre:'totti',edad:2, raza:'perro'}
 ];
 
-const indexed=mascotas.reduce((acc,el)=>({
-    ...acc,
-    [el.nombre]:el,    
-}),{})
+const indexed=mascotas.reduce((acc,el)=>({...acc,[el.nombre]:el,}),{});
 
 //console.log(indexed)
 
