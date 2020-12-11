@@ -15,9 +15,10 @@ function letTest() {
     const variable=fn3(x,y);
     if (true) {
         //console.log("let test 1 "+x);  // 71
-        let x = 71;  // variable diferente
+        let x = 71;  // variable diferente, pero si nosotros no declaramos este sino lo resignamos, el let test 3 cambia de valor
         console.log("let test 2 "+x);  // 71
+       
     }
     console.log("let test 3 "+x);  // 31
   }
-  
+  console.log("El valor de x afuera es",x);

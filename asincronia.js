@@ -1,10 +1,10 @@
 //ASINCRONIA
 
-/* existen muchas formas de manejar la asincronia
-    Paso de continuadores(Callbacks)
-    Eventos
-    Promesas(ECMA6 y librerias)
-    Generadores
+/* Existen muchas formas de manejar la asincronia
+    *Paso de continuadores(Callbacks)
+    *Eventos
+    *Promesas(ECMA6 y librerias)
+    *Generadores
 */
 
 function traigoDatos(){
@@ -23,12 +23,12 @@ function pintoDatos(){
 //traigoDatos();
 //pintoDatos();
 
-/* como se puede ver, los mensajes no salen en el orden correcto. 
+/* Como se puede ver, los mensajes no salen en el orden correcto. 
 recordemos que, para pintar datos, el paso previo -siempre- es tener esos datos disponibles
 */
 
-/* ahora vamos a intentar resolver este problema de una manera sencilla. 
-si introducimos un callback en la funcion asincrona, seremos capases de resolver el problema... aunque tarde 3 segundos o 
+/* Ahora vamos a intentar resolver este problema de una manera sencilla. 
+si introducimos un callback en la funcion asincrona, seremos capaces de resolver el problema... aunque tarde 3 segundos o 
 5 minutos */
 
 function traigoDatosArreglado(callback){

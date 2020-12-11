@@ -1,4 +1,4 @@
-//spread esparcir
+//Spread = esparcir
 
 /*cuando tenemos un arreglo definido y queremos dividir o esparcir el arreglo */
 
