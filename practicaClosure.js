@@ -5,8 +5,9 @@
     Un Closure recuerda el ambito donde ha sido declarado
 
 */
+var saveCoins=1;
 const moneyBox=()=>{ //fatArrowFunction
-    var saveCoins=0;
+    saveCoins=0; // con let igual se puede
     const countCoins=(coins)=>{
         saveCoins+=coins;
         console.log("MoneyBox"+saveCoins);
@@ -19,4 +20,6 @@ let myMoneyBox=moneyBox();
 myMoneyBox(4);
 myMoneyBox(6); // Recuerda la asignacion del valor anterior
 myMoneyBox(5);
+
+console.log(saveCoins);
 
