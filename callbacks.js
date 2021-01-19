@@ -80,7 +80,7 @@ algunas soluciones a este problema
     -modularizar y refactorizar son tus dos mejores amigos en JS
     -gestiona los errores en cada funcion y no al final de la pila
 
-si aun asi te ves totalmente incapaz de prevenit este error, siempre puedes recurrir a 
+si aun asi te ves totalmente incapaz de prevenir este error, siempre puedes recurrir a 
     -generadores
     -promesas
     -funciones async
