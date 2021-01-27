@@ -60,52 +60,77 @@ class MySinglyLinkedList {
         return this;
     }
 
-    lookup(value){
-        let nodo=this.head;
-        let length=1;
-        while( nodo != null){
-            if(value==nodo.value){
+    lookup(value) {
+        let nodo = this.head;
+        let length = 1;
+        while (nodo != null) {
+            if (value == nodo.value) {
                 console.log("Valor de node", nodo);
-                console.log("Se encuentra en la posicion ", length-1);
+                console.log("Se encuentra en la posicion ", length - 1);
                 break;
             }
             length++;
-            nodo=nodo.next;
+            nodo = nodo.next;
         }
     }
 
-    mostrarLista=()=>{
-        let nodo=this.head;
+    mostrarLista = () => {
+        let nodo = this.head;
         console.log("mostrar la lista");
-        while(nodo!=null){
-            console.log(nodo.value," ->");
-            nodo=nodo.next;
+        while (nodo != null) {
+            console.log(nodo.value, " ->");
+            nodo = nodo.next;
         }
     }
 
-    getTheIndex=(index)=>{
-        let counter=0;
-        let currentNode=this.head;
-        while(counter!==index){
-            currentNode=currentNode.next;
+    getTheIndex = (index) => { // busca el nodo del index y devuelve ese nodo
+        let counter = 0;
+        let currentNode = this.head;
+        while (counter !== index) {
+            currentNode = currentNode.next;
             counter++;
         }
         return currentNode;
     }
 
-    insert=(index,value)=>{
+    getIndexAnterior = (index) => {
+        let counter = 0;
+        let currentNode = this.head;
 
-        let nodo=this.head;
-        if (index >= this.length){ // si es mayor a nuestra lista
-            return this.append(value);
+        while (counter < index) {
+            if (counter == (index - 2)) {
+                return currentNode;
+            }
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
+
+
+    insert = (index, value) => {
+
+        let nodo = this.head;
+        if (index >= this.length) { // si el index es mayor a nuestra lista
+            return this.append(value); // lo inserta al final
         }
 
-        const newNode= new Node(value);
-        
-        const firstPointer = this.getTheIndex(index-1);
-        const holdingPointer = firstPointer.next; 
+        const newNode = new Node(value); // se crea un nuevo nodo con el valor
+
+        const firstPointer = this.getTheIndex(index - 1); // obtiene el nodo del index
+
+        const holdingPointer = firstPointer.next;  // asigna los siguirntes 
         firstPointer.next = newNode;
-        newNode.next=holdingPointer;
+        newNode.next = holdingPointer;
+    }
+
+    delete = (index) => {
+
+        const firstPointer = this.getTheIndex(index - 2);
+        const nextPointer = this.getTheIndex(index);
+
+        firstPointer.next = nextPointer;
+
     }
 }
 
@@ -118,6 +143,13 @@ myLinkedList.append(5)
 //myLinkedList.mostrarLista();
 
 //myLinkedList.lookup(2);
-console.log(myLinkedList.insert(4,3));
+//console.log(myLinkedList.insert(4,3)); // despues de la posicion 4 (en realidad es la 3 ya que parte desde 0)
+
 
 myLinkedList.mostrarLista();
+
+myLinkedList.delete(3);
+
+myLinkedList.mostrarLista();
+
+//console.log("Nodo Consultado", myLinkedList.getIndexAnterior(3));
