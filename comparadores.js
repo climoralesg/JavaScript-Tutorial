@@ -1,4 +1,4 @@
-//nos saltaremos lo de siempre y solamente nos centraremos en los nuevos 
+//Nos saltaremos lo de siempre y solamente nos centraremos en los nuevos 
 //operadores de comparacion 
 
 var igual = 10 == 10; //true

@@ -40,6 +40,7 @@ class MySinglyLinkedList {
         this.length = 1;
     }
 
+    //agrega un nodo al final
     append(value) {
         // aquí estamos creando un nuevo nodo
         const newNode = new Node(value);
@@ -60,6 +61,7 @@ class MySinglyLinkedList {
         return this;
     }
 
+    //busca un nodo
     lookup(value) {
         let nodo = this.head;
         let length = 1;
@@ -107,7 +109,7 @@ class MySinglyLinkedList {
         return currentNode;
     }
 
-
+    //inserta un nodo en la lista
     insert = (index, value) => {
 
         let nodo = this.head;
@@ -124,6 +126,7 @@ class MySinglyLinkedList {
         newNode.next = holdingPointer;
     }
 
+    //borra un nodo
     delete = (index) => {
 
         const firstPointer = this.getTheIndex(index - 2);

@@ -1,45 +1,46 @@
-// algunas funciones de console mas famosas
+/*
+    Console
+El console es un lugar muy util para ver y debbugear ciertos resultados de nuestro codigo.
 
+*/
 //DESTACADOS
 //.assert() aparece si un mensaje de error es falsa, no pasa nada si es verdadera
-var controlador=false;
-console.assert(controlador,  "\"controlador\" es igual a \"false\"");
+let controlador = false;
+console.assert(controlador, "\"controlador\" es igual a \"false\"");
 
 //.dir() retorna una lista interactiva con las propiedades de un objeto 
-    //console.dir(document.body);
+console.dir(document.body);
 
 //.dirxml() retorna la representacion html del objeto
-    //console.dirxml(document.body);
-
-
+console.dirxml(document.body);
 
 //.clear() limpia la consola
-//console.clear();
+console.clear();
 
-//AGRUPADORES
-
-//.group() crea un grupo de mensajes de consola
-//.groupEnd () cierra el grupo de mensajes
-//groupCollapsed() crea un grupo de mensajes de consola minimizados por defecto
-
+/*
+AGRUPADORES
+    .group() crea un grupo de mensajes de consola
+    .groupEnd () cierra el grupo de mensajes
+    .groupCollapsed() crea un grupo de mensajes de consola minimizados por defecto
+*/
 console.groupCollapsed("bucleFor");
-for(var i=100; i>0;i--){
-    console.info("iteracion numero %i ",i);
+for (var i = 100; i > 0; i--) {
+    console.info("iteracion numero %i ", i);
 }
 console.groupEnd();
 
-//TABLAS
-
-//.table() muestra los datos dentro de una tabla 
-
-var lenguajes=[
-    {nombre:"Javascript",extension:".js"},
-    {nombre:"Typescript",extension:".ts"},
-    {nombre:"CoffeeScript",extension:".coffe"}
+/*
+    TABLAS
+    .table() muestra los datos dentro de una tabla 
+*/
+var lenguajes = [
+    { nombre: "Javascript", extension: ".js" },
+    { nombre: "Typescript", extension: ".ts" },
+    { nombre: "CoffeeScript", extension: ".coffe" }
 ];
 
-console.table (lenguajes);
-console.table (lenguajes,['extension']);
+console.table(lenguajes);
+console.table(lenguajes, ['extension']);
 
 // GESTION DE TIEMPO 
 
@@ -48,9 +49,9 @@ console.table (lenguajes,['extension']);
 
 console.time("Medicion de miArray");
 
-var miArray=new Array(1000000);
-for(var i=miArray.length-1; i>=0;i--){
-    miArray[i]=new Object();
+var miArray = new Array(1000000);
+for (var i = miArray.length - 1; i >= 0; i--) {
+    miArray[i] = new Object();
 };
 console.timeEnd("Medicion de miArray");
 
