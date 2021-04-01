@@ -27,7 +27,7 @@ const graph = {
     3: [1, 3],
 }
 
-//Adjencent list
+//Adjencent Matrix
 
 const graph = {
     0: [0, 0, 1, 0],

@@ -35,3 +35,16 @@ const resultado=suma(edades);
 console.log(resultado);
 console.log(resultado/edades.length);
 console.log(resultadoSumaFuncion);
+
+let mascotasFiltradas1=mascotas.map(function(mascota){ // lo mismo se pude hacer con map
+    return mascota.nombre=="pulga";
+});
+
+console.log(mascotasFiltradas1);
+
+let mascotasFiltradas=mascotas.map(function(mascota){ // lo mismo se pude hacer con map
+    return mascota.nombre;
+});
+console.log(mascotasFiltradas);
+
+

@@ -41,6 +41,7 @@ class Queue{
 //remover al primer elemento de la linea
     dequeue(){
         this.first=this.first.next;
+        this.length--;
     }
 }
 
@@ -49,8 +50,10 @@ const myQueue=new Queue;
 
 console.log(myQueue.enqueue(1));
 console.log(myQueue.enqueue(2));
-
+console.log(myQueue);
 /*
 console.log(myQueue.peek());
 console.log(myQueue.first);
 */
+
+

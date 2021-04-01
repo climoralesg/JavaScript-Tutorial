@@ -8,7 +8,9 @@ const promesa= new Promise((resolve,reject)=>{
     setTimeout(()=>{
         x=5;
         if(x==5){
+            console.log("proceso");
             resolve("Es 5, Proceso 2 terminado");
+            
         }else{
             reject('El valor no es 5, Proceso terminado')
         }
@@ -23,3 +25,11 @@ promesa.then(res=>{
     console.log("Terminado" , error)
     console.log("Proceso 3 terminado");
 })
+
+const funcionPrimera=()=>{
+    console.log("Primera funcion");
+}
+
+const funcionSegunda=()=>{
+    console.log("Segunda funcion");
+}

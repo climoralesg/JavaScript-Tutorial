@@ -7,6 +7,7 @@ const mascotas=[
     {nombre:'cachucho',edad:7, raza:'perro'},
     {nombre:'chanchito feliz',edad:3, raza:'gato'},
     {nombre:'pulga',edad:8, raza:'perro'},
+    {nombre:'pulga',edad:8, raza:'gato'},
     {nombre:'totti',edad:2, raza:'perro'}
 ];
 
@@ -23,3 +24,9 @@ console.log(gatos);
 console.log(perros);
 
 //console.log (mascotas,numeros);
+
+let mascotasFiltradas=mascotas.filter(function(mascota){ // lo mismo se pude hacer con map
+    return mascota.nombre=="pulga";
+});
+
+console.log(mascotasFiltradas);
