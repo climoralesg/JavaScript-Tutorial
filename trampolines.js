@@ -4,7 +4,7 @@ algunas veces manda error que es
 Maximun call stack size exceeded
 pasa cuando se ha llamado a la funcion mas veces de lo 
 permitido por lo que esta limitado el llamado a funciones recursivas
-trampolines nos permite hacer llamados a funciones cuantas veces queramos
+Trampolines nos permite hacer llamados a funciones cuantas veces queramos
 eliminando la barrera del tail call optimization */
 
 const trampoline=fn=>(...args)=>{

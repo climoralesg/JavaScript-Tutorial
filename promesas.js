@@ -7,7 +7,7 @@ console.log("Ejecutando el proceso 1 ");
 const promesa= new Promise((resolve,reject)=>{
     setTimeout(()=>{
         x=5;
-        if(x==5){
+        if(x==10){
             console.log("proceso");
             resolve("Es 5, Proceso 2 terminado");
             
@@ -22,7 +22,7 @@ promesa.then(res=>{
     console.log("Terminado" , res);
     console.log("Proceso 3 terminado");
 }).catch(error=>{
-    console.log("Terminado" , error)
+    console.log("Terminado Error catch" , error)
     console.log("Proceso 3 terminado");
 })
 

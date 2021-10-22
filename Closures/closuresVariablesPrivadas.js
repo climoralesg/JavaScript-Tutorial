@@ -1,3 +1,4 @@
+//var saveName="";
 const person=()=>{
     var saveName="Nombre"
     return {
@@ -15,3 +16,4 @@ console.log(ejecucionFunction.getName());
 
 ejecucionFunction.setName("Cambio Nombre");
 console.log(ejecucionFunction.getName());
+console.log(saveName);

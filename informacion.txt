@@ -1,0 +1,32 @@
+class Tabla {
+    totalRobot = 0;
+    socketsConnected=[];
+    bridgeSockets=[];
+}
+
+let tabla =new Tabla();
+
+tabla.bridgeSockets.push({
+            socketMain:1,
+            socketWorker:2,
+    },
+					   {
+            socketMain:3,
+            socketWorker:4,
+    },
+					   {
+            socketMain:5,
+            socketWorker:6,
+    },
+{
+            socketMain:3,
+            socketWorker:4,
+    });
+
+console.log(tabla);
+console.log(tabla.bridgeSockets);
+tabla.bridgeSockets=tabla.bridgeSockets.filter(function(connection){
+	return connection.socketMain != 3
+})
+
+console.log(tabla.bridgeSockets);

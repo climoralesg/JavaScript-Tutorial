@@ -1,3 +1,9 @@
+/*
+Spread Array
+Definido como (...) nos permite llamar de forma simple todo un array (contenido)
+Tambien puede ser ocupado en objetos.
+*/ 
+
 const frutasVerdes=[
     'kiwi',
     'uva',

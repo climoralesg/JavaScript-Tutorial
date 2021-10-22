@@ -1,0 +1,5 @@
+const zelda={
+
+}
+
+zelda.saludar

@@ -1,4 +1,4 @@
-//Array Filter sirve filtrar los elementos del Array
+//Array Filter sirve filtrar los elementos del Array.
  
 //Declaramos variables
 const numeros=[1,2,3,4,5,6,7,8,9]
@@ -29,4 +29,4 @@ let mascotasFiltradas=mascotas.filter(function(mascota){ // lo mismo se pude hac
     return mascota.nombre=="pulga";
 });
 
-console.log(mascotasFiltradas);
+console.log("mascotas ",mascotasFiltradas);

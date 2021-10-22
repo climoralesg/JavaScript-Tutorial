@@ -1,5 +1,6 @@
-// Operador spread es ...
-
+/* Operador spread es ... nos permite agregar llamar una informacion de un objeto
+ de una forma "masiva"
+*/
 const perfil = {
     nombre: 'Gerardo',
     info: {

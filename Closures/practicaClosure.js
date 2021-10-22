@@ -21,5 +21,5 @@ myMoneyBox(4);
 myMoneyBox(6); // Recuerda la asignacion del valor anterior
 myMoneyBox(5);
 
-console.log(saveCoins);
+console.log("Save coins",saveCoins);
 

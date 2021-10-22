@@ -7,30 +7,30 @@ Reduce es un metodo que nos permite ejecutar funciones reduce sobre una funcion
 */
 //const reducer=(acumulador, valorActual)=>nuevoAcumulador
 
-const reducido=[1,2].reduce((acc,el)=> acc + el ,0)
+const reducido = [1, 2].reduce((acc, el) => acc + el, 0)
 //reduce((acumulador,valor actual)=>acumulador+ valor actual, donde comienza)
 console.log(reducido);
-const numeros=[1,2,3,4,5,6,7,8,9]
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-const reducidoNumeros=numeros.reduce((acc,el)=> acc + el ,0)
+const reducidoNumeros = numeros.reduce((acc, el) => acc + el, 0)
 console.log(reducidoNumeros);
 
 
-const mascotas=[
-    {nombre:'cachucho',edad:7, raza:'perro'},
-    {nombre:'chanchito feliz',edad:3, raza:'gato'},
-    {nombre:'pulga',edad:8, raza:'perro'},
-    {nombre:'totti',edad:2, raza:'perro'}
+const mascotas = [
+    { nombre: 'cachucho', edad: 7, raza: 'perro' },
+    { nombre: 'chanchito feliz', edad: 3, raza: 'gato' },
+    { nombre: 'pulga', edad: 8, raza: 'perro' },
+    { nombre: 'totti', edad: 2, raza: 'perro' }
 ];
 
-const indexed=mascotas.reduce((acc,el)=>({...acc,[el.nombre]:el,}),{});
+const indexed = mascotas.reduce((acc, el) => ({ ...acc, [el.nombre]: el, }), {});
 
 //console.log(indexed)
 
 console.log("indexes", indexed['pulga'])
-const anidado=[1,[2,3],4,[5]];
+const anidado = [1, [2, 3], 4, [5]];
 
 //1 2 3 4 5 
-const plano=anidado.reduce((acc,el)=>acc.concat(el),[])
+const plano = anidado.reduce((acc, el) => acc.concat(el), [])
 console.log(plano);
 
